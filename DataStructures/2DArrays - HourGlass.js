@@ -49,7 +49,7 @@ function hourglassSum(array) {
             let bottom = array[i+2][j] + array[i+2][j+1] + array[i+2][j+2];
             let total  = top + middle + bottom;
 
-            if (total > sum || sum === undefined) {
+            if (total > maxSum || maxSum === undefined) {
                 maxSum = total;
             }    
         };
