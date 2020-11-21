@@ -21,11 +21,11 @@
 
 
 // Complete the freqQuery function below. (Little Slow, 1 test failed out of all)
-function freqQuery(queries) {
+function freqQuery(queries) { // [ [1,1], [2,2], [3,2], [1,1], [1,1], [2,1], [3,2] ]
 
-    const frequencies = [];
-    const frequencyTracker = [];
-    const result = [];
+    const frequencies = []; // [ <1 empty item>, 2 ]
+    const frequencyTracker = []; //  [ <1 empty item>, 0, 1, 0, undefined: 1 ]
+    const result = []; // [ 0, 1 ]
 
     for (const query of queries) {
         const action = query[0];
@@ -58,6 +58,8 @@ function freqQuery(queries) {
     return result;
 
 }
+
+console.log(freqQuery( [ [1,1], [2,2], [3,2], [1,1], [1,1], [2,1], [3,2] ] ));
 
 // Complete the freqQuery function below. (Little Slow, 1 test failed out of all)
 function freqQuery2(queries) {
